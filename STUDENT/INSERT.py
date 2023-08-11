@@ -1,0 +1,10 @@
+import sqlite3
+conn = sqlite3.connect('test.db')
+conn.execute("INSERT INTO STUDENT (ID,NAME,DEPT,ATTENDENCE) VALUES(1,'Anand','CSE',75)")
+conn.execute("INSERT INTO STUDENT (ID,NAME,DEPT,ATTENDENCE) VALUES(2,'Arvind','CSE',65)")
+conn.execute("INSERT INTO STUDENT (ID,NAME,DEPT,ATTENDENCE) VALUES(3,'Ankitha','CSE',95)")
+conn.execute("INSERT INTO STUDENT (ID,NAME,DEPT,ATTENDENCE) VALUES(4,'Anjali','CSE',85)")
+conn.execute("INSERT INTO STUDENT (ID,NAME,DEPT,ATTENDENCE) VALUES(5,'Arnav','CSE',55)")
+conn.commit()
+print("Records created successfully")
+conn.close()
